@@ -1,30 +1,43 @@
-"""Check if userbot alive. If you change these, you become the gayest gay such that even the gay world will disown you."""
-#IMG CREDITS: @WhySooSerious
+
+"""Check if userbot alive or not . 
+
+"""
+import os
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from platform import uname
-from userbot import ALIVE_NAME
+from userbot import ALIVE_NAME, CMD_HELP
 from userbot.utils import admin_cmd
+from telethon import version
+from math import ceil
+import json
+import random
+import re
+from telethon import events, errors, custom
+import io
+from platform import python_version, uname
+
+ALIVE_IMG = Config.ALIVE_PHOTTO
+if ALIVE_IMG is None:
+  ALIVE_IMG = "https://telegra.ph/file/3952f58c07382778cab87.jpg"
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
-ALIVE_IMG = "https://telegra.ph/file/6225d447ed8ba1d23079f.jpg"
-ALIVE_caption = "`Sensible Userbot IS:` **ONLINE**\n\n"
-ALIVE_caption += "**SYSTEM STATUS**\n\n"
-ALIVE_caption += "`TELETHON VERSION:` **6.0.9**\n`Python:` **3.7.4**\n\n"
-ALIVE_caption += "`DATABASE STATUS:` **Functional**\n\n"
-ALIVE_caption += "**Current Branch** : `master`\n\n"
-ALIVE_caption += "**Sensible  OS** : `3.14`\n\n"
-ALIVE_caption += "**Current Sat** : `Sensible Userbot Sat-2.95`\n\n"
-ALIVE_caption += f"**My Boss** : {DEFAULTUSER} \n\n"
-ALIVE_caption += "**Heroku Database** : `AWS - Working Properly`\n\n"
-ALIVE_caption += "**Bot Made By @ceowhitehatcracks \n\n"
-ALIVE_caption += "Copyright By [CEOWHITEHATCRACKS](GitHub.com/spandey112)\n\n"
-ALIVE_caption += "[Deploy SensibleUserbot](GitHub.com/spandey112/SensibleUserbot)"
+
+ALIVE_MESSAGE = Config.ALIVE_MSG
+if ALIVE_MESSAGE is None:
+  ALIVE_MESSAGE = "**🔱TzmBot IS still Alive🔱\n\n\n**"
+  ALIVE_MESSAGE += "`My Bot Status\n\n\n`"
+  ALIVE_MESSAGE += f"`Telethon: Telethon Not Found\n\n`"
+  ALIVE_MESSAGE += f"`Python: PYTHON-3.6.4 \n\n`"
+  ALIVE_MESSAGE += "`I'll Be With You Master Till My Dyno Ends!!\n\n`"
+  ALIVE_MESSAGE += f"`Support Channel` : @UsE_oZmBoT \n\n"
+  ALIVE_MESSAGE += f"`Bot Created And Maintained By`:   {DEFAULTUSER}\n\n "
+                
+            
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-    await alive.delete()
-    await borg.send_file(alive.chat_id, ALIVE_IMG,caption=ALIVE_caption)
+    await alive.delete() 
+    await borg.send_file(alive.chat_id, ALIVE_IMG,caption=ALIVE_MESSAGE)
