@@ -90,6 +90,8 @@ if ENV:
         EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", None)
         NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD = os.environ.get("NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD", None)
         NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", None)
+        #pm permit
+        PM_PRMT_PRVT_GRP_ID = os.environ.get("PM_PRMT_PRVT_GRP_ID", None)
         #Google Chrome Stuff
         CHROME_DRIVER = os.environ.get("CHROME_DRIVER", "/app/.chromedriver/bin/chromedriver")
         GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
