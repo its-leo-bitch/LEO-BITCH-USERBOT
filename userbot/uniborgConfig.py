@@ -70,8 +70,6 @@ if ENV:
         # can be None in which case plugins requiring
         # DataBase would not work
         DB_URI = os.environ.get("DATABASE_URL", None)
-        # number of rows of buttons to be displayed in .helpme command
-        NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 5))
         # specify command handler that should be used for the plugins
         # this should be a valid "regex" pattern
         COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", "\.")
@@ -85,6 +83,13 @@ if ENV:
         GROUP_REG_SED_EX_BOT_S = os.environ.get("GROUP_REG_SED_EX_BOT_S", r"(regex|moku|BananaButler_|rgx|l4mR)bot")
         TEMP_DIR = os.environ.get("TEMP_DIR", None)
         CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -100))
+        #alive 
+        ALIVE_MSG = os.environ.get("ALIVE_MSG", None)
+        ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO", None)
+        #inline
+        EMOJI_TO_DISPLAY_IN_HELP = os.environ.get("EMOJI_TO_DISPLAY_IN_HELP", None)
+        NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD = os.environ.get("NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD", None)
+        NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", None)
         #Google Chrome Stuff
         CHROME_DRIVER = os.environ.get("CHROME_DRIVER", "/app/.chromedriver/bin/chromedriver")
         GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", "/app/.apt/usr/bin/google-chrome")
