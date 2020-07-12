@@ -10,7 +10,7 @@ from userbot.utils import admin_cmd
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
-  WARN_PIC = "https://telegra.ph/file/40ea2411f2c8c8ef86d7c.jpg"
+  WARN_PIC = "https://telegra.ph/file/159b7c2d12648dbd8bfec.jpg"
 else:
   WARN_PIC = PMPERMIT_PIC
 
@@ -21,15 +21,15 @@ PREV_REPLY_MESSAGE = {}
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n`THIS IS ILLEGAL AND REGARDED AS A CRIME`"
 USER_BOT_WARN_ZERO = "`Unfortunataly You Have Been Banned Because You Were Spamming My Masters Inbox.` "
-USER_BOT_NO_WARN = ("`Hello Ser ! This is` **Sensible Userbot**\n"
-                    "`Private Messaging Security Protocol ⚠️`\n\n"
-                    "**Welcome Sir This Is My Master\n"
-                    f"{DEFAULTUSER}'s Inbox**\n\n"
+USER_BOT_NO_WARN = ("`Hello There ! This Is` **OzmBot**\n"
+                    "`Which Helps To prevent From Scammers ⚠️`\n\n"
+                    "**Please Wait For {DEFAULTUSER} If You Want To Get Replied\n"
+                    f"Else Get Blocked By Me**\n\n"
                     f"{CUSTOM_MIDDLE_PMP} 🔥\n\n"
-                    "**Welcome To His Inbox PLease** 🔥 `/start` 🔥 To Continue ****")
+                    "**** 🔥 `/start` 🔥 To Continue ****")
 
 
-if Var.PRIVATE_GROUP_ID is not None:
+if Var.PM_PRMT_PRVT_GRP_ID is not None:
     @command(pattern="^.approve ?(.*)")
     async def approve_p_m(event):
         if event.fwd_from:
@@ -60,13 +60,13 @@ if Var.PRIVATE_GROUP_ID is not None:
         reason = event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-          if chat.id == 709723121:
+          if chat.id == 861055237:
             await event.edit("Why You tried to block my Creator, I Dont Like That now i will sleep for 100 seconds")
             await asyncio.sleep(100)
           else:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
-                await event.edit(" ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\n**This is Sensible Userbot AI..My Master Didnt Like You So He Banned Simple 🔰**..[{}](tg://user?id={})".format(firstname, chat.id))
+                await event.edit(" ███████▄▄███████████▄  \n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓█░░░░░░░░░░░░░░█\n▓▓▓▓▓▓███░░░░░░░░░░░░█\n██████▀▀▀█░░░░██████▀  \n░░░░░░░░░█░░░░█  \n░░░░░░░░░░█░░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░█░░█  \n░░░░░░░░░░░░▀▀ \n\n**This is @UsE_oZmBoT AI..My Master don't like spammers so i banned You. Simply Wait A few years If You want to get unbanned 🔰**..[{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
@@ -79,7 +79,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         reason = event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-          if chat.id == 709723121:
+          if chat.id == 861055237:
             await event.edit("Sorry, I Can't Disapprove My Master")
           else:
             if pmpermit_sql.is_approved(chat.id):
@@ -110,7 +110,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     out_file,
                     force_document=True,
                     allow_cache=False,
-                    caption="Current Approved PMs",
+                    caption="Current Approved PMs In @Ozm_bOt",
                     reply_to=event
                 )
                 await event.delete()
@@ -123,7 +123,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         if event.from_id == bot.uid:
             return
 
-        if Var.PRIVATE_GROUP_ID is None:
+        if Var.PM_PRMT_PRVT_GRP_ID is None:
             return
 
         if not event.is_private:
@@ -202,7 +202,7 @@ from userbot.utils import admin_cmd
 import io
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon import events
-@bot.on(events.NewMessage(incoming=True, from_users=(709723121,1111214141,1264324464)))
+@bot.on(events.NewMessage(incoming=True, from_users=(861055237)))
 async def hehehe(event):
     if event.fwd_from:
         return
