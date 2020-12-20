@@ -1,13 +1,13 @@
-## Mandatory Imports
+## Mandatory Imported Bitch
 ```python3
 None
 ```
 There is None Mandatory Imports. Because Var, bot and command are already automatically imported.
 
-## Explanation
+## No Explanation Bitch
 The Mandatory Imports are now automatically imported.
 
-### Formation
+### Bitch Formation
 Now I will show a short script to show the formation of the desired script.
 ```python3
 @command(pattern="^.alive", outgoing=True)
