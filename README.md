@@ -1,6 +1,6 @@
 ### LEO-BITCH-USERBOT
 <p align="center">
-    <img src="https://telegra.ph/file/505e3d50d9a408301a50e.jpg"
+    <img src="https://telegra.ph/file/ae8aacf507e0d09108f29.jpg"
     <a href="https://github.com/its-leo-bitch/LEO-BITCH-USERBOT/commits/master"><img src="https://img.shields.io/github/last-commit/its-leo-bitch/LEO-BITCH-USERBOT/master?label=Last%20Commit&style=flat-square&logo=github&color=F10070" alt="Commit" /></a>
     <a href="https://github.com/its-leo-bitch/LEO-BITCH-USERBOT/stargazers"><img src="https://img.shields.io/github/stars/its-leo-bitch/LEO-BITCH-USERBOT?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
     <a href="https://github.com/its-leo-bitch/1st-experiment-/network/members"><img src="https://img.shields.io/github/forks/its-leo-bitch/LEO-BITCH-USERBOT?label=Fork&style=flat-square&logo=github&color=F10070" alt="Fork" /></a>
