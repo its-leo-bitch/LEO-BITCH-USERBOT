@@ -43,3 +43,4 @@ def get_all_muted():
     rem = SESSION.query(Mute).all()
     SESSION.close()
     return rem
+
