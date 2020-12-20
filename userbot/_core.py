@@ -84,3 +84,6 @@ async def load(event):
         await event.edit(f"Successfully loaded {shortname}")
     except Exception as e:
         await event.edit(f"Could not load {shortname} because of the following error.\n{str(e)}")
+
+        
+        
