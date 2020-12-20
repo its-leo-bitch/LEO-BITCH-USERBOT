@@ -48,3 +48,5 @@ def rm_all_notes(chat_id):
     if notes:
         notes.delete()
         SESSION.commit()
+
+        
