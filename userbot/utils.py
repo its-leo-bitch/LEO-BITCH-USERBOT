@@ -354,3 +354,5 @@ class Loader():
         self.Var = Var
         bot.add_event_handler(func, events.NewMessage(**args))
 
+
+        
