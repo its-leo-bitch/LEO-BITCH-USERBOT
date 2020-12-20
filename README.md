@@ -16,4 +16,4 @@
 
 # A complete Userbot written in python3.6+ by [It's-leo-bitch](https://t.me/WONKRU_HERE)
 # Deploy 👨‍💻
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/No-OnE-Kn0wS-Me/OzmBot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/its-leo-bitch/LEO-BITCH-USERBOT)
