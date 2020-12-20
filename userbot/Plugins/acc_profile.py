@@ -73,3 +73,5 @@ async def _(event):
         os.remove(photo)
     except Exception as e:  # pylint:disable=C0103,W0703
         logger.warn(str(e))  # pylint:disable=E0602
+
+        
