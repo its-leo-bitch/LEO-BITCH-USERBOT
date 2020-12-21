@@ -1,50 +1,56 @@
-""" Powered by @Google
-Available Commands:
-.go <query> credits to owner of bot
-"""
+# Copyright (C) 2020 by Leo-Bitch-Team@Github, < https://github.com/its-leo-bitch >.
+#
+# This file is part of < https://github.com/its-leo-bitch/LEO_BITCH_USERBOT > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/its-leo-bitch/LEO_BITCH_USERBOT/master/LICENSE >
+#
+# All rights reserved.
 
-import asyncio
-import os
-from re import findall
-import requests
-from bs4 import BeautifulSoup
-from datetime import datetime
-from requests import get
-from urllib.parse import quote_plus
-from urllib.error import HTTPError
-from google_images_download import google_images_download
-from gsearch.googlesearch import search
-from userbot.utils import admin_cmd
-from search_engine_parser import GoogleSearch
+from search_engine_parser.core.engines.google import Search as GoogleSearch
+
+from userge import Message, userge
 
 
-def progress(current, total):
-    logger.info("Downloaded {} of {}\nCompleted {}".format(current, total, (current / total) * 100))
-
-
-@borg.on(admin_cmd("go (.*)"))
-async def gsearch(q_event):
-    """ For .google command, do a Google search. """
-    match = q_event.pattern_match.group(1)
-    page = findall(r"page=\d+", match)
+@userge.on_cmd(
+    "google",
+    about={
+        "header": "do a Google search",
+        "flags": {
+            "-p": "page of results to return (default to 1)",
+            "-l": "limit the number of returned results (defaults to 5)(max 10)",
+        },
+        "usage": "{tr}google [flags] [query | reply to msg]",
+        "examples": "{tr}google -p4 -l10 github-userge",
+    },
+)
+async def gsearch(message: Message):
+    await message.edit("Processing ...")
+    query = message.filtered_input_str
+    flags = message.flags
+    page = int(flags.get("-p", 1))
+    limit = int(flags.get("-l", 5))
+    if message.reply_to_message:
+        query = message.reply_to_message.text
+    if not query:
+        await message.err(text="Give a query or reply to a message to google!")
+        return
     try:
-        page = page[0]
-        page = page.replace("page=", "")
-        match = match.replace("page=" + page[0], "")
-    except IndexError:
-        page = 1
-    search_args = (str(match), int(page))
-    gsearch = GoogleSearch()
-    gresults = await gsearch.async_search(*search_args)
-    msg = ""
-    for i in range(len(gresults["links"])):
+        g_search = GoogleSearch()
+        gresults = await g_search.async_search(query, page)
+    except Exception as e:
+        await message.err(text=e)
+        return
+    output = ""
+    for i in range(limit):
         try:
             title = gresults["titles"][i]
             link = gresults["links"][i]
             desc = gresults["descriptions"][i]
-            msg += f"[{title}]({link})\n`{desc}`\n\n"
+            output += f"[{title}]({link})\n"
+            output += f"`{desc}`\n\n"
         except IndexError:
             break
-    await q_event.edit("**Search Query:**\n`" + match + "`\n\n**Results:**\n" +
-                       msg,
-                       link_preview=False)
+    output = f"**Google Search:**\n`{query}`\n\n**Results:**\n{output}"
+    await message.edit_or_send_as_file(
+        text=output, caption=query, disable_web_page_preview=True
+    )
