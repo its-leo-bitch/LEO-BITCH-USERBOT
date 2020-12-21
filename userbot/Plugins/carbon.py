@@ -72,7 +72,7 @@ async def carbon_api(e):
 
    """ A Wrapper for carbon.now.sh """
 
-   await e.edit("`Processing..`")
+   await e.edit("`Processing Bitch..`")
 
    CARBON = 'https://carbon.now.sh/?l={lang}&code={code}'
 
@@ -92,7 +92,7 @@ async def carbon_api(e):
 
    code = quote_plus(pcode) # Converting to urlencoded
 
-   await e.edit("`Meking Carbon...\n25%`")
+   await e.edit("`Meking Carbon..Bitch.\n25%`")
 
    url = CARBON.format(code=code, lang=CARBONLANG)
 
@@ -140,11 +140,11 @@ async def carbon_api(e):
 
    sleep(2.5)
 
-   await e.edit("`Done Dana Done...\n100%`")
+   await e.edit("`Oh yeah..common.Bitch.\n100%`")
 
    file = './carbon.png'
 
-   await e.edit("`Uploading..`")
+   await e.edit("`Uploading.So..Hard..Bitch.`")
 
    await e.client.send_file(
 
@@ -152,7 +152,7 @@ async def carbon_api(e):
 
          file,
 
-         caption="<< Here's your carbon, \n Carbonised by [Sensible Userbot](https://www.github.com/midhunkm1294-bit/Sensible Userbot)>> ",
+         caption="<< Here's your carbon..Bitch, \n Carbonised by [Sensible Userbot](https://www.github.com/midhunkm1294-bit/Sensible Userbot)>> ",
 
          force_document=True,
 
