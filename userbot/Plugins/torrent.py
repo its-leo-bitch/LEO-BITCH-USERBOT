@@ -1,12 +1,12 @@
 """
-A Torrent Client Plugin Based On Aria2 for Userbot
+A Torrent Client Plugin Based On Leo's Creations for @Leo_BITCH_USERBOT
 
 cmds: Magnet link : .magnet magnetLink
 	  Torrent file from local: .tor file_path
 	  Show Downloads: .show
 	  Remove All Downloads: .ariaRM
 	  
-By:- @Zero_cool7870	   
+By:- @betalinktobot 	   
 
 """
 import aria2p
