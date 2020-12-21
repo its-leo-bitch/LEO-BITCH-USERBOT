@@ -30,11 +30,11 @@
       "required": false
     },
     "ALIVE_NAME": {
-      "description": "Fill your Full name or Username like @No_OnE_Kn0wS_Me",
+      "description": "Fill your Full name or Username like @WONKRU_HERE",
       "value": ""
     },
     "APP_ID": {
-      "description": "Get this value from @UseTGXBot  Please do not steal",
+      "description": "Get this value from https://my.telegram.org Please do not steal",
       "value": ""
     },
     "REM_BG_API_KEY": {
@@ -48,7 +48,7 @@
       "required": false
     },
     "API_HASH": {
-      "description": "Get this value from @UseTGXBot Please do not steal",
+      "description": "Get this value from https://my.telegram.org Please do not steal",
       "value": ""
     },
     "PLUGIN_CHANNEL": {
