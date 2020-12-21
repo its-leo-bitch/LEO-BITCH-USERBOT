@@ -5,6 +5,7 @@ Syntax: .belo
 Quotes credits: Xequist 
 """
 
+
 from telethon import events
 
 import asyncio
