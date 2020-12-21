@@ -79,3 +79,5 @@ async def apkr(e):
         await e.edit("No result found in search. Please enter **Valid app name**")
     except Exception as err:
         await e.edit("Exception Occured:- "+str(err))
+
+        
