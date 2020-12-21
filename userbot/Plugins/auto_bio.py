@@ -64,7 +64,7 @@ BIO_STRINGS = [
      "🙈",
      "🙉",
      "🙊",
-     "🖕🐵🖕",
+     "🖕💋Common 🐵Bitch💋🖕",
 
 ]
 
