@@ -40,3 +40,5 @@ async def _(event):
         await event.edit("Solution -->\n" + exp + "\n" + str(final_term1 % final_term2))
     else:
         await event.edit("use .calc help")
+
+        
