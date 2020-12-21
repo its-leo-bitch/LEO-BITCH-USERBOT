@@ -1,4 +1,4 @@
-"""night Plugin for Sensible_userbot
+"""night Plugin for Leo_BITCH_USERBOT 
 Syntax: .night REASON"""
 import asyncio
 import datetime
@@ -32,7 +32,7 @@ async def set_not_night(event):
                 event.chat_id,
                 "Please set `PLUGIN_CHANNEL` " + \
                 "for the proper functioning of night functionality " + \
-                "in @Sensible_userbot \n\n `{}`".format(str(e)),
+                "in @Leo_BITCH_USERBOT \n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True
             )
