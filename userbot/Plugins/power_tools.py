@@ -33,5 +33,5 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Shutting Down 😭 Turn Me On From heroku If You Dont Know How To Do That Join @Sensible_userbot And Ask In Discussion")
+    await event.edit("Shutting Down 😭 Turn Me On From heroku If You Dont Know How To Do That Join @Leo_BITCH_USERBOT And Ask In Discussion")
     await borg.disconnect()
