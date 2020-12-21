@@ -1,7 +1,7 @@
 """Emoji
 Available Commands:
 .ceowhitehatcracks
-Credits to @CeoWhiteHatCracks
+Credits to @Leo_parmigiana
 """
 
 from telethon import events
@@ -21,13 +21,13 @@ async def _(event):
    # if input_str == "ceowhitehatcracks":
     await event.edit("@CeoWhiteHatCracks")
     animation_chars = [
-            "@CeoWhiteHatCracks tera baap",
-            "@CeoWhiteHatCracks is bot ka creator",
-            "@CeoWhiteHatCracks bot ko jaan dene wala",
-            "@CeoWhiteHatCracks owner of @Sensible_userbot ",
-            "tujhe aur kya chaiye vo hai mere sath",
-            "tera baap",
-            "@CeoWhiteHatCracks"
+            "@CeoWhiteHatCracks is your dad bitch",
+            "@CeoWhiteHatCracks just a Grp Bitch",
+            "@Leo_BITCH_USERBOT is AI ultimate.Bitch.",
+            "@CeoWhiteHatCracks owner of DAD ",
+            "Dont Fuck with me Bitch...@WONKRU_HERE",
+            "hows Your Dad",
+            "@Leo_BITCH_USERBOT"
          ]
             
 
