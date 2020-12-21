@@ -10,9 +10,9 @@ from userbot import ALIVE_NAME
 
 naam = str(ALIVE_NAME)
 
-bot = "@ceowhitehatcracks"
-bluebot = "@ceowhitehatcracks"
-freebot = "@ceowhitehatcracks"
+bot = "@Leo_BITCH_USERBOT"
+bluebot = "@betalinktobot"
+freebot = "@Leo_BITCH_USERBOT"
 
 
 @borg.on(admin_cmd("jav ?(.*)"))
@@ -53,7 +53,7 @@ async def _(event):
               await borg.send_file(event.chat_id, audio, caption="**Dr.Bot Is Here To Help**\n`Check out` [Sensible Userbot Support](t.me/sensible_userbot)")
               await event.delete()
           except YouBlockedUserError:
-              await event.edit("**Error:** `unblock` @ceowhitehatcracks `and retry!`")
+              await event.edit("**Error:** `unblock` @Leo_BITCH_USERBOT `and retry!`")
     elif sysarg == "npic":
       async with borg.conversation(bot) as conv:
           try:
@@ -64,7 +64,7 @@ async def _(event):
               await borg.send_file(event.chat_id, audio, caption="**For" + naam +" **\n`Check out` [Sensible Userbot Support](t.me/sensible_userbot)")
               await event.delete()
           except YouBlockedUserError:
-              await event.edit("**Error:** `unblock` @sensible_userbot `and retry!`")
+              await event.edit("**Error:** `unblock` @Leo_BITCH_USERBOT `and retry!`")
     elif sysarg == "rs":
       async with borg.conversation(bot) as conv:
           try:
@@ -72,10 +72,10 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/rs")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**CREDITS : @CEOWHITEHATCRACKS**\n`Check out` [Sensible Userbot Support](t.me/sensible_userbot)")
+              await borg.send_file(event.chat_id, audio, caption="**CREDITS : @WONKRU_HERE**\n`Check out` [LEO-BITCH Userbot Support](t.me/Leo_BITCH_USERBOT)")
               await event.delete()
           except YouBlockedUserError:
-              await event.edit("**Error:** `unblock` @ceowhitehatcracks `and retry!`")
+              await event.edit("**Error:** `unblock` @Leo_BITCH_USERBOT `and retry!`")
     elif sysarg == "ib":
       async with borg.conversation(bot) as conv:
           try:
@@ -83,10 +83,10 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/ib")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**CREDITS : Ceowhitehatcracks**\n`Check out` [Sensible Userbot](ttps://github.com/spandey112/SensibleUserbot)")
+              await borg.send_file(event.chat_id, audio, caption="**CREDITS : @WONKRU_HERE**\n`Check out` [its-leo-bitch](ttps://github.com/its-leo-bitch/LEO-BITCH-USERBOT)")
               await event.delete()
           except YouBlockedUserError:
-              await event.edit("**Error:** `unblock` @Ceowhitehatcracks `and retry!`")
+              await event.edit("**Error:** `unblock` @Xequist `and retry!`")
     elif sysarg == "acc":
       async with borg.conversation(bot) as conv:
           try:
@@ -97,7 +97,7 @@ async def _(event):
               await borg.send_file(event.chat_id, audio)
               await event.delete()
           except YouBlockedUserError:
-              await event.edit("**Error:** `unblock` @ceowhitehatcracks `and retry!`")
+              await event.edit("**Error:** `unblock` @Xequist `and retry!`")
     else:
       await brog.send_message(event.chat_id, "**INVALID** -- FOR HELP COMMAND IS **.jav --h**")
       await event.delete()
