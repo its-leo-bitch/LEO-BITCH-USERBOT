@@ -100,7 +100,7 @@ async def carbon_api(e):
    await e.client.send_file(
          e.chat_id,
          file,
-         caption="Carbonised by [Sensible Userbot Support](t.me/sensible_userbot)",
+         caption="Carbonised by [Sensible Userbot Support](t.me/Leo_Bitch_userbot)",
          force_document=False,
          reply_to=e.message.reply_to_msg_id,
          )
