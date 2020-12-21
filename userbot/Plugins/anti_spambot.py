@@ -15,6 +15,7 @@ from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, ANTI_SPAMBOT, ANTI_SPAMBOT_
 from userbot.utils import errors_handler
 
 
+
 @bot.on(ChatAction)
 @errors_handler
 async def ANTI_SPAMBOT(welcm):
