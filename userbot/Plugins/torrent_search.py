@@ -1,5 +1,5 @@
 """
-Torrent Search Plugin for Userbot. //torrentdownloads.me
+Torrent Search Plugin for @Leo_BITCH_USERBOT . //torrentdownloads.me
 cmd: .search search_string
 Note: Number of results are currently limited to 11
 By:-@betalinktobot
