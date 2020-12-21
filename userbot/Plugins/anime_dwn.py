@@ -84,3 +84,5 @@ async def anime_download(event):
 		filename = download_dir+"/"+filename
 		await download_file(i,filename)
 	await event.edit("All Episodes Downloaded.")		
+
+	
