@@ -41,7 +41,7 @@ async def _(event):
             "`Connecting To Telegram Headquarters...`",
             "`Call Connected.`",
             "`Telegram: Hello This is Telegram HQ. Who is this?`",
-            "`Me: Yo this is` @[Sensible Userbot Support](t.me/sensible_userbot) ,`Please Connect me to my idiot bro,Ayush Durov`",
+            "`Me: Yo this is` @[Sensible Userbot Support](t.me/sensible_userbot) ,`Please Connect me to my idiot ma,Girl Bitch`",
             "`User Authorised.`",
             "`Calling Pavel Durov`  `At +916969696969`",
             "`Private  Call Connected...`",
@@ -53,7 +53,7 @@ async def _(event):
             "`Pavel: Please Don't Thank Brah, Telegram Is Our's. Just Gimme A Call When You Become Free.`",
             "`Me: Is There Any Issue/Emergency???`",
             "`Pavel: Yes Sur, There Is A Bug In Telegram v69.6.9.\nI Am Not Able To Fix It. If Possible, Please Help Fix The Bug.`",
-            "`Me: Send Me The App On My Telegram Account, I Will Fix The Bug & Send You.`",
+            "`Me: What about your new whore..? Send Me The App On My Telegram Account, I Will Fix The Bug & Send You.`",
             "`Pavel: Sure Sur \nTC Bye Bye :)`",
             "`Private Call Disconnected.`"
         ]
