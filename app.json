@@ -1,6 +1,6 @@
 {
   "name": "LEO-BITCH-USERBOT",
-  "description": "Userbot Modified by @WONKRU_HERE  and join @Xequist for any problems or support",
+  "description": "Userbot Modified by @WONKRU_HERE  and join @Leo_BITCH_USERBOT for any problems or support",
   "logo": "https://telegra.ph/file/ae8aacf507e0d09108f29.jpg",
     "keywords": [
     "telegram",
@@ -12,7 +12,7 @@
     "simple"
   ],
   "repository": "https://github.com/its-leo-bitch/LEO-BITCH-USERBOT",
-  "website": "https://t.me/UsE_oZmBoT",
+  "website": "https://t.me/LEO-BITCH-USERBOT",
   "success_url": "https://t.me/WONKRU_HERE",
   "env": {
     "ENV": {
