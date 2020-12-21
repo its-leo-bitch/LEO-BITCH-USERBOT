@@ -17,7 +17,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
-                "© OZMBOT Help",
+                "© Leo_BITCH_USERBOT Help",
                 text="{}\nCurrently Loaded Plugins: {}".format(
                     query, len(CMD_LIST)),
                 buttons=buttons,
@@ -33,7 +33,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 event.data_match.group(1).decode("UTF-8"))
             buttons = paginate_help(
                 current_page_number + 1, CMD_LIST, "helpme")
-            # https://t.me/TelethonChat/115200
+            # https://t.me/Leo_BITCH_USERBOT
             await event.edit(buttons=buttons)
         else:
             reply_pop_up_alert = "Please get your own Userbot, and don't use mine!"
@@ -74,11 +74,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             reply_pop_up_alert = help_string
         reply_pop_up_alert += "\n Use .unload {} to remove this plugin\n\
-            © OZMBOT".format(plugin_name)
+            © Leo_BITCH_USERBOT".format(plugin_name)
         try:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         except: 
-            #https://github.com/Dark-Princ3/X-tra-Telegram/commit/275fd0ec26b284d042bf56de325472e088e6f364#diff-2b2df8998ff11b6c15893b2c8d5d6af3
+            #https://github.com/its-leo-bitch/LEO-BITCH-USERBOT
             with io.BytesIO(str.encode(reply_pop_up_alert)) as out_file:
                 out_file.name = "{}.txt".format(plugin_name)
                 await borg.send_file(
@@ -93,7 +93,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
     number_of_rows = Config.NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD
     number_of_cols = Config.NO_OF_COLOUMS_DISPLAYED_IN_H_ME_CMD
     multi = Config.EMOJI_TO_DISPLAY_IN_HELP
-    #Thanks to @No_OnE_Kn0wS_Me For this feature 
+    #Thanks to @WONKRU_HERE For this feature 
     helpable_plugins = []
     for p in loaded_plugins:
         if not p.startswith("_"):
