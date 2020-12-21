@@ -1,5 +1,5 @@
 """
-Pornhub downloader by @ceowhitehatcracks
+Pornhub downloader by @betalinktobot
 Syntax: .phd link
 """
 import datetime
@@ -33,7 +33,7 @@ async def _(event):
     if "pornhub" not in d_link:
         await event.edit("` I need a link to download something pro.`**(._.)**")
     else:
-        await event.edit("**💦Preparing to upload Video💦 **\n**Title**:  `{}`\n**Total Views**: `{}`".format(title, views))
+        await event.edit("**💦Preparing to upload Bitch Video💦 **\n**Title**:  `{}`\n**Total Views**: `{}`".format(title, views))
     await asyncio.sleep(2)
     
 
