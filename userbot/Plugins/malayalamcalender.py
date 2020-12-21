@@ -1,4 +1,4 @@
-"""Malayalam Calendar plugin for @Sensible_userbot 
+"""Malayalam Calendar plugin for @Leo_BITCH_USERBOT
 SYNTAX: .calendar YYYY-MM-DD"""
 from telethon import events
 import asyncio
