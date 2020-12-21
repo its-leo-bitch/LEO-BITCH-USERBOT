@@ -33,7 +33,7 @@ async def _(event):
 
     animation_chars = [
         
-            "`Connecting To JIO Network 📡 ....`",
+            "`Connecting To JIO Network Bitch  📡 ....`",
             "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
             "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
             "`▒ ▒ ▆ ▅ ▄ ▂ ▁`",
@@ -51,7 +51,7 @@ async def _(event):
             "`▁ ▂ ▄ ▅ ▆ ▒ ▒`",
             "`▁ ▂ ▄ ▅ ▆ ▇ ▒`",
             "`▁ ▂ ▄ ▅ ▆ ▇ █`",
-            "**JIO Network Connected and Boosted....**"
+            "**JIO Network Connected and Boosted..Enjoy Bitch..**"
 
  ]
 
