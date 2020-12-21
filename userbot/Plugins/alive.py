@@ -31,7 +31,7 @@ if ALIVE_MESSAGE is None:
   ALIVE_MESSAGE += f"`Telethon: Telethon Not Found\n\n`"
   ALIVE_MESSAGE += f"`Python: PYTHON-3.6.4 \n\n`"
   ALIVE_MESSAGE += "`I'll Be With You Master Till My Dyno Ends!!\n\n`"
-  ALIVE_MESSAGE += f"`Support Channel` : @Xequist \n\n"
+  ALIVE_MESSAGE += f"`Support Channel` : @Leo_BITCH_USERBOT \n\n"
   ALIVE_MESSAGE += f"`Bot Created And Maintained By`:   {DEFAULTUSER}\n\n "
                 
             
