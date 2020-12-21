@@ -1,4 +1,4 @@
-# Thanks to @AvinashReddy3108 for this plugin
+# Thanks to @WONKRU_HERE for this plugin
 
 """
 Audio and video downloader using Youtube-dl
