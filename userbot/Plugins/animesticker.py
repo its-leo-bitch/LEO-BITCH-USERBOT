@@ -22,7 +22,6 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-
 EMOJI_PATTERN = re.compile(
     "["
     "\U0001F1E0-\U0001F1FF"  # flags (iOS)
